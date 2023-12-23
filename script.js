@@ -35,8 +35,7 @@ setInterval(updateTime, 1000);
 
 // taks that are neended to be performed on the alarm 
 function alarmTask(id){
-    const music = document.createElement('audio');
-    music.src = 'https://www.fesliyanstudios.com/play-mp3/4384';
+    const music = new Audio('alertSound.mp3');
     music.play();
     // display the alarm id;
     if(!alarmDisplayed){
